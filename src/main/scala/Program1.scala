@@ -106,7 +106,7 @@ object Program1  {
 //    println((patternR findAllIn stReg).mkString(";"))
 
     //Pattern Matching
-    def matchCourse(course: String): String = course match {
+    /*def matchCourse(course: String): String = course match {
       case "ruby" => "rails"
       case "scala" => "play"
       case "groovy" => "grails"
@@ -119,7 +119,15 @@ object Program1  {
     //for loop with yield
     val rowVal=for(row <- 1 to 5) yield print(row%2 + " ")
 
+    */
 
+    val mainList = List(3, 2, 1)
+    val with4 =    4 :: mainList  // re-uses mainList, costs one :: instance
+    val with42 =   42 :: mainList // also re-uses mainList, cost one :: instance
+    val shorter =  mainList.tail
+    println(with4);
+    println(with42);
+    println(shorter);
   }
 
 }
